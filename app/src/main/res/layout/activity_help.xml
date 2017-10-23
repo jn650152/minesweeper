@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dce0fd"
+    tools:context="com.example.jingluo.minesweeper.help">
+
+    <TextView
+        android:id="@+id/helptext"
+        android:textSize="18dp"
+        android:layout_width="0dp"
+        android:layout_height="394dp"
+        android:text="This app has 5 functions, minesweeper game, setting, ranking, sharing and help document.\n\nOn Minesweeper View,\nStart a game: click the start button to start the timer.\nPlay a new game: click reset, then click start.\nLeave the current page: click the back button.\nWant a hint: click the hint button.\nFlagging or removing the flag: long tap.\nRevealing the cell: short tap.\n\nOther features: please explore yourself."
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="48dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/backbutton"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        />
+
+    <Button
+        android:id="@+id/backbutton"
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:gravity="center"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/helptitle"
+        android:textSize="20dp"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:text="@string/help"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textStyle="bold"/>
+</android.support.constraint.ConstraintLayout>

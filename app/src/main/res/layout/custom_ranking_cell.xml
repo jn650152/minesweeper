@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+        android:id="@+id/rankingnum"
+        android:layout_height="45dp"
+        android:layout_width="45dp"
+        app:layout_constraintRight_toLeftOf="@+id/time"
+        android:layout_marginRight="5dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.391"
+        android:textColor="@android:color/background_light">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_height="45dp"
+        android:layout_width="80dp"
+        android:textSize="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="80dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@android:color/background_light">
+
+    </TextView>
+
+</android.support.constraint.ConstraintLayout>
+
+
+
+

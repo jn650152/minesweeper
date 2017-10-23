@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nightbackground"
+    tools:context="com.example.jingluo.minesweeper.SettingView">
+
+    <TextView
+        android:id="@+id/music"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/background_music"
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/level"
+        android:textStyle="bold"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/game_level"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:id="@+id/hint"
+        android:textStyle="bold"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/hint_number"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music"
+        android:textColor="@android:color/background_light"/>
+
+    <EditText
+        android:id="@+id/hintnum"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music"
+        android:textColor="@android:color/background_light"/>
+
+    <CheckBox
+        android:id="@+id/checkboxbeginner"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="32dp"
+        android:checked="false"
+        android:text="Beginner"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hint"
+        android:textColor="@android:color/background_light"/>
+
+    <CheckBox
+        android:id="@+id/checkboxmedium"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="2dp"
+        android:text="Medium"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxbeginner"
+        android:textColor="@android:color/background_light"/>
+
+    <CheckBox
+        android:id="@+id/checkboxadvanced"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="2dp"
+        android:text="Advanced"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkboxmedium"
+        android:textColor="@android:color/background_light"/>
+
+    <ScrollView
+        android:layout_width="120dp"
+        android:layout_height="93dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/flex"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:checked="false"
+                android:text="@string/flex"
+                android:textColor="@android:color/background_light"/>
+
+            <CheckBox
+                android:id="@+id/quick"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:checked="false"
+                android:text="@string/quick"
+                android:textColor="@android:color/background_light"/>
+
+            <CheckBox
+                android:id="@+id/others"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="@string/others"
+                android:textColor="@android:color/background_light"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/image"
+        android:textStyle="bold"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="80dp"
+        android:text="Background Image"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:id="@+id/volume"
+        android:textStyle="bold"
+        android:layout_width="153dp"
+        android:layout_height="35dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:text="volume"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:id="@+id/setting"
+        android:textStyle="bold"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Setting"
+        android:textSize="20dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@android:color/background_light"/>
+
+    <Button
+        android:id="@+id/save"
+        android:textStyle="bold"
+        android:layout_width="88dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volume"
+        />
+
+    <ScrollView
+        android:id="@+id/backgroundimage"
+        android:layout_width="120dp"
+        android:layout_height="93dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/level">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/gamebackgroundundersea"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="@string/undersea"
+                android:textColor="@android:color/background_light"/>
+
+            <CheckBox
+                android:id="@+id/gamebackgroundgreen"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="@string/green"
+                android:textColor="@android:color/background_light"/>
+
+            <CheckBox
+                android:id="@+id/gamebackgroundblue"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="@string/blue"
+                android:textColor="@android:color/background_light"/>
+
+            <CheckBox
+                android:id="@+id/gamebackgroundmountain"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="@string/mountain"
+                android:textColor="@android:color/background_light"/>
+
+            <CheckBox
+                android:id="@+id/gamebackgroundcatoon"
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:text="@string/catoon"
+                android:textColor="@android:color/background_light"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="120dp"
+        android:layout_height="27dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="72dp"
+        android:max="99"
+        android:progress="50"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image"
+        />
+
+</android.support.constraint.ConstraintLayout>

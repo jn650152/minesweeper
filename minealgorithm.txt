@@ -1,0 +1,7 @@
+algorithm:
+generate a single-dimension-array of size 81 and assign one to each element.
+randomly genrate a specific number of positions ranging from 0 to 80.
+for each position, get the sounding cells' positions and add one to these elements.
+
+citation:
+generation, W. (2017). What's the algorithm behind minesweeper generation. [online] Stackoverflow.com. Available at: https://stackoverflow.com/questions/3578456/whats-the-algorithm-behind-minesweeper-generation [Accessed 21 Oct. 2017].
